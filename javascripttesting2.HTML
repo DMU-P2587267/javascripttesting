@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Let's count clicks!</h2>
+
+<p id="demo">You have clicked 0 times.</p>
+
+<script>
+// Let's define a variable. Its initial value is 0 (0 clicks)
+let x = 0;
+
+function countClicks() {
+  // Every time we click on the button, we add '1' to the variable.
+  x = x + 1;
+  // Let's print the result!
+  document.getElementById("demo").innerHTML = "You have clicked " + x + " times";
+}
+</script>
+
+<button type="button" onclick='countClicks()'>Click Me!</button>
+
+</body>
+</html>
